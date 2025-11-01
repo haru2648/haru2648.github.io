@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工大祭 よくある質問（Q&A）</title>
+
+    <!-- 提供されたCSSを元に、このページ用にスタイルを調整 -->
+    <style>
+        /* === Google Fontsとローカルフォントの読み込み === */
+        /* ※ローカルフォント 'Komorebi Gothic' はURLから読み込めないため、指定のみ行います */
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+        /* === カラーとフォントの定義 === */
+        :root {
+            --main-purple: #76499F;
+            --light-purple: #E7CBFF;
+            --red: #d90000;
+            --dark-text: #333333;
+            --white-bg: #ffffff;
+            --border-color: #dddddd;
+            
+            /* 'Komorebi Gothic' がない場合は 'sans-serif' が適用される */
+            --font-title: 'Komorebi Gothic', sans-serif; 
+            --font-body: 'Noto Sans JP', sans-serif;
+        }
+
+        /* === 基本設定 === */
+        body {
+            font-family: var(--font-body);
+            margin: 0;
+            background-color: var(--white-bg);
+            padding: 0 0 50px 0;
+            color: var(--dark-text);
+            line-height: 1.7;
+            /* 全体の基準フォントサイズを調整 */
+            font-size: 90%;
+        }
+
+        /* === ヘッダー === */
+        header {
+            color: var(--dark-text);
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid var(--border-color);
+        }
+        header h1 {
+            margin: 0;
+            font-family: var(--font-title);
+            /* 元の1.8emから1割縮小 */
+            font-size: 1.62em; 
+            color: #000000;
+        }
+        .header-separator {
+            display: block;
+            width: 100%;
+            max-width: 700px;
+            margin: 20px auto;
+            height: auto;
+        }
+
+        /* === メインコンテンツ === */
+        main {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        /* === Q&Aセクション === */
+        .faq-section {
+            background-color: var(--white-bg);
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+            padding: 20px;
+        }
+
+        /* === 質問（Q）ヘッダー === */
+        .faq-header {
+            text-align: center;
+        }
+        .faq-header h2 {
+            margin: 0 0 20px 0;
+            padding-bottom: 10px;
+            font-family: var(--font-body);
+            font-weight: bold;
+            /* 元の1.25emから1割縮小 */
+            font-size: 1.125em;
+
+            /* グラデーションテキスト */
+            background-image: linear-gradient(to bottom, #9f2964, #7c3f84);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+
+            /* グラデーションボーダー */
+            border-bottom: 2px solid;
+            border-image-source: linear-gradient(to right, #9f2964, #7c3f84);
+            border-image-slice: 1;
+        }
+
+        /* === 回答（A）エリア === */
+        .faq-answer {
+            padding: 0 10px;
+        }
+        .faq-answer p, .faq-answer ul, .faq-answer ol {
+            margin-top: 0;
+            margin-bottom: 1em;
+        }
+        .faq-answer h4 {
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+            border-left: 4px solid var(--main-purple);
+            padding-left: 10px;
+            /* 元の1.1emから1割縮小 */
+            font-size: 0.99em;
+        }
+
+        /* === 強調テキスト === */
+        strong {
+            color: var(--red);
+            font-weight: bold;
+        }
+        
+        /* === スマートフォン向けの表示調整 === */
+        @media (max-width: 600px) {
+            body { padding-bottom: 30px; }
+            main { padding: 0 10px; }
+            /* 元の1.6emから1割縮小 */
+            header h1 { font-size: 1.44em; }
+            .faq-section { padding: 15px; }
+            /* 元の1.1emから1割縮小 */
+            .faq-header h2 { font-size: 0.99em; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <!-- ページタイトル。指定のフォントを適用 -->
+        <h1>工大祭グランプリ Q&A</h1>
+        <!-- ヘッダーの区切り線画像（ファイルがない場合表示されません） -->
+        <img src="header-separator.svg" alt="区切り線" class="header-separator">
+    </header>
+
+    <main>
+        <!-- Q&A 1 -->
+        <section class="faq-section">
+            <div class="faq-header">
+                <h2>Q. グランプリ（投票企画）はどこでやっていますか？</h2>
+            </div>
+            <div class="faq-answer">
+                <p>ありがとうございます。<br>投票は、お手持ちのスマートフォンから<strong>「工大祭公式アプリ」</strong>または<strong>「特設サイト」</strong>で行えます。</p>
+                <p>サイトのQRコードは、お配りしている資料の最後や、この案内所にも掲示しております。</p>
+                <p>可能であれば、<strong>公式アプリからの投票がおすすめ</strong>です。<br>
+                アプリですと、企画を回ってスタンプを集めると、ガラガラ抽選の回数が増えたり、グランプリへの投票数が自動で増えたりする特典があります。</p>
+            </div>
+        </section>
+
+        <!-- Q&A 2 -->
+        <section class="faq-section">
+            <div class="faq-header">
+                <h2>Q. ガラガラ抽選はどこですか？ どうすれば参加できますか？</h2>
+            </div>
+            <div class="faq-answer">
+                <p>ガラガラ抽選所は、<strong>図書館前のグランプリテント</strong>です。</p>
+                <p>抽選に参加するには、まずグランプリの投票（アプリ または サイト）を完了させていただく必要があります。</p>
+                <ol>
+                    <li><strong>アプリ（推奨）</strong><br>
+                        アプリで投票し、スタンプを集めてからテントに行くと、スタンプの数に応じて抽選回数が増えます。</li>
+                    <li><strong>サイト</strong><br>
+                        サイトで投票した場合でも、最後に「1回分の抽選券」が表示されますので、それをテントで見せれば1回抽選できます。</li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Q&A 3 -->
+        <section class="faq-section">
+            <div class="faq-header">
+                <h2>Q. スタンプ何個で何回ガラガラができますか？</h2>
+            </div>
+            <div class="faq-answer">
+                <p>基本ルールとして<strong>「スタンプ〇個につき1回」</strong>抽選ができる予定です。</p>
+                <p>（※ただし、この回数は景品の在庫状況などによって当日変更になる可能性がございます。正確な回数は、<strong>図書館前のグランプリテント</strong>にてご案内しておりますので、そちらでご確認ください）</p>
+            </div>
+        </section>
+
+        <!-- Q&A 4 -->
+        <section class="faq-section">
+            <div class="faq-header">
+                <h2>Q. アプリやサイトの操作ができません。（またはスマホを持っていません）</h2>
+            </div>
+            <div class="faq-answer">
+                <p>かしこまりました。<br>その場合、<strong>図書館前のグランプリテント（ガラガラ抽選所）にて、委員（スタッフ）が直接対応</strong>いたします。</p>
+                <p>お手数ですが、そちらのテントで「アプリやサイトの操作ができない」とお伝えください。</p>
+            </div>
+        </section>
+
+        <!-- Q&A 5 -->
+        <section class="faq-section">
+            <div class="faq-header">
+                <h2>Q. スタンプラリーについて教えてください。</h2>
+            </div>
+            <div class="faq-answer">
+                <p>スタンプラリーは<strong>公式アプリ限定の機能</strong>です。</p>
+                
+                <h4>1. スタンプを集めるとどうなりますか？</h4>
+                <ul>
+                    <li>ガラガラ抽選の回数が増えます。</li>
+                    <li>グランプリの投票数（投票券）が自動で増えます。<br>
+                        <small>（※模擬店、学生展示、アカデミックの部門が増加します。ステージとBEST OF 工大祭は増加しません）</small>
+                    </li>
+                </ul>
+
+                <h4>2. どうすれば集められますか？</h4>
+                <p>ステージ企画以外の企画の「会計場所」や「出口」付近に、<strong>6桁の数字のコード</strong>が掲示されています。<br>
+                もし見つからなければ企画の人に「スタンプのコードはどこですか？」と聞いてみてください。<br>
+                アプリの「スタンプ帳」の画面を開き、「コードを入力」というボタンを押して、その数字を手で打ち込むとスタンプが貯まります。</p>
+
+                <h4>3. どこで使えますか？</h4>
+                <p>貯まったスタンプは、<strong>図書館前のグランプリテント</strong>でガラガラ抽選の回数として使えます。</p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
